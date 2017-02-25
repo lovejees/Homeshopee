@@ -1,0 +1,109 @@
+<div layout="row">
+  <div flex><div layout="column">
+    <div flex>
+      <md-content layout-padding>
+        <div  ng-form="signup.sellerForm">
+          <h1>Signup as Seller</h1>
+          <div layout-gt-xs="column">
+            <div layout-gt-xs="row">
+            <md-input-container class="m-block" flex-gt-xs>
+              <label>Name</label>
+              <input type="text" name="name" ng-model="signup.seller.firstname" >
+            </md-input-container>
+            <!-- <md-input-container class="m-block" flex-gt-xs>
+              <label>Last Name</label>
+              <input type="text" name="name" ng-model="signup.lastname" >
+            </md-input-container> -->
+          </div>
+            <md-input-container class="m-block" flex-gt-xs>
+              <label>Email</label>
+              <input type="text" name="name" ng-model="signup.seller.email" >
+            </md-input-container>
+            <md-input-container class="m-block" flex-gt-xs>
+              <label>New password</label>
+              <input type="text" name="name" ng-model="signup.seller.password" >
+            </md-input-container>
+            <div class="row">
+            <div class="col-md-6 col-sm-12">
+            <md-radio-group ng-model="signup.seller.gender">
+              <label>Gender</label>
+              <md-radio-button class="md-primary" value="male" aria-label="male">
+                Male
+              </md-radio-button>
+              <md-radio-button class="md-primary" value="female" aria-label="female">
+                Female
+              </md-radio-button>
+            </md-radio-group>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <md-autocomplete md-floating-label="select work type" md-selected-item="signup.seller.worktype" md-search="signup.searchText" md-items="item in signup.searchingText" md-item-text="item.name">
+              <span md-highlight-text="signup.searchText">{{item.name}}</span>
+            </md-autocomplete>
+          </div>
+            </div>
+          </div>
+        </div>
+      </md-content>
+    </div>
+  </div>
+</div>
+<div flex><div layout="column">
+  <div flex>
+    <md-content layout-padding>
+      <div  ng-form="signup.buyerForm">
+        <h1>Signup as Buyer</h1>
+        <div layout-gt-xs="column">
+          <div layout-gt-xs="row">
+          <md-input-container class="m-block" flex-gt-xs>
+            <label>Name</label>
+            <input type="text" name="name" ng-model="signup.buyer.firstname" >
+          </md-input-container>
+          <!-- <md-input-container class="m-block" flex-gt-xs>
+            <label>Last Name</label>
+            <input type="text" name="name" ng-model="signup.lastname" >
+          </md-input-container> -->
+        </div>
+          <md-input-container class="m-block" flex-gt-xs>
+            <label>Email</label>
+            <input type="text" name="name" ng-model="signup.buyer.email" >
+          </md-input-container>
+          <md-input-container class="m-block" flex-gt-xs>
+            <label>New password</label>
+            <input type="text" name="name" ng-model="signup.buyer.password" >
+          </md-input-container>
+          <div class="row">
+          <div class="col-md-6 col-sm-12">
+          <md-radio-group ng-model="signup.buyer.gender">
+            <label>Gender</label>
+            <md-radio-button class="md-primary" value="male" aria-label="male">
+              Male
+            </md-radio-button>
+            <md-radio-button class="md-primary" value="female" aria-label="female">
+              Female
+            </md-radio-button>
+          </md-radio-group>
+        </div>
+        <div class="col-md-6 col-sm-12" ng-if="">
+          <md-autocomplete md-floating-label="select work type" md-selected-item="signup.buyer.worktype" md-search="signup.searchText" md-items="item in signup.searchingText" md-item-text="item.name">
+            <span md-highlight-text="signup.searchText">{{item.name}}</span>
+          </md-autocomplete>
+        </div>
+          </div>
+        </div>
+      </div>
+    </md-content>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="m-t-10" layout="row" layout-align="center" layout-wrap>
+    <md-content>
+      <md-button class="md-fab md-primary" aria-label="submit" ng-click="signup.signup()">
+        <md-icon class="text-white" md-svg-src="../images/icons/fat_arrow_white.svg"></md-icon>
+      </md-button>
+    </md-content>
+</div>
