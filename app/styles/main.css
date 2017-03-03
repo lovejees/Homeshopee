@@ -105,6 +105,9 @@ body {
 .margin-20{
   margin: 20px;
 }
+.margin-25{
+  margin: 25px;
+}
 /*margin top*/
 .m-t-0{
   margin-top:0px;
@@ -333,8 +336,14 @@ body {
 .bg-white{
     background-color: white !important;
 }
+.bg-transparent{
+    background-color: transparent;
+}
 .change-profile-img{
   position: absolute;
   bottom: 0px;
   right: 10px;
+}
+.signup-body{
+  background: url('../images/bg.svg') no-repeat center;
 }

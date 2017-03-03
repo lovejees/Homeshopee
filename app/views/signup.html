@@ -1,8 +1,9 @@
+<div class="signup-body">
 <div layout="row">
   <div flex><div layout="column">
     <div flex>
-      <md-content layout-padding>
-        <div  ng-form="signup.sellerForm">
+      <md-content layout-padding class="bg-transparent">
+        <div  ng-form="signup.sellerForm" class="margin-25 bg-white">
           <h1>Signup as Seller</h1>
           <div layout-gt-xs="column">
             <div layout-gt-xs="row">
@@ -10,10 +11,6 @@
               <label>Name</label>
               <input type="text" name="name" ng-model="signup.seller.firstname" >
             </md-input-container>
-            <!-- <md-input-container class="m-block" flex-gt-xs>
-              <label>Last Name</label>
-              <input type="text" name="name" ng-model="signup.lastname" >
-            </md-input-container> -->
           </div>
             <md-input-container class="m-block" flex-gt-xs>
               <label>Email</label>
@@ -49,8 +46,8 @@
 </div>
 <div flex><div layout="column">
   <div flex>
-    <md-content layout-padding>
-      <div  ng-form="signup.buyerForm">
+    <md-content layout-padding class="bg-transparent">
+      <div  ng-form="signup.buyerForm" class="margin-25 bg-white">
         <h1>Signup as Buyer</h1>
         <div layout-gt-xs="column">
           <div layout-gt-xs="row">
@@ -100,10 +97,11 @@
 </div>
 </div>
 </div>
-<div class="m-t-10" layout="row" layout-align="center" layout-wrap>
+<div class="m-t-10 bg-transparent" layout="row" layout-align="center" layout-wrap>
     <md-content>
       <md-button class="md-fab md-primary" aria-label="submit" ng-click="signup.signup()">
         <md-icon class="text-white" md-svg-src="../images/icons/fat_arrow_white.svg"></md-icon>
       </md-button>
     </md-content>
+</div>
 </div>
