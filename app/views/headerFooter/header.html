@@ -1,6 +1,6 @@
-<div class="header">
-  <div class="navbar navbar-default" role="navigation">
-    <div class="container m-r-0 m-l-0 full-width" ng-init="page=1">
+<div class="header m-b-0">
+  <div class="navbar navbar-default bg-light-green m-b-0" role="navigation">
+    <div class="container m-r-0 m-l-0 full-width padding-0" ng-init="page=1">
       <div class="navbar-header">
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
@@ -10,19 +10,19 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href ng-click="setPath('/');page=1" ng-bind="appName"></a>
+        <a class="navbar-brand m-l-0" href ng-click="setPath('/');page=1" ng-bind="appName"></a>
       </div>
 
-      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+      <div class="collapse navbar-collapse padding-0" id="js-navbar-collapse">
 
         <ul class="nav navbar-nav">
-          <li ng-class="{'active':page==1}"><a href ng-click="setPath('/');page=1">Home</a></li>
-          <li ng-class="{'active':page==2}"><a href ng-click="setPath('/about');page=2">About</a></li>
-          <li ng-class="{'active':page==3}"><a href ng-click="setPath('/');page=3">Contact</a></li>
+          <li ng-class="{'active':page==1}"><a  class="text-white-gray" href ng-click="setPath('/');page=1">Home</a></li>
+          <li ng-class="{'active':page==2}"><a  class="text-white-gray" href ng-click="setPath('/about');page=2">About</a></li>
+          <li ng-class="{'active':page==3}"><a  class="text-white-gray" href ng-click="setPath('/');page=3">Contact</a></li>
           <!-- <li><md-button ng-click="setPath('/signup')" class="md-primary md-raised">sign up</md-button></li> -->
         </ul>
         <div class="pull-right">
-          <md-button ng-click="setPath('/signup');page=0" class="md-primary md-raised">sign up</md-button>
+          <md-button ng-click="setPath('/signup');page=0" class="md-raised bg-dark-gray">sign up</md-button>
         </div>
       </div>
     </div>

@@ -159,7 +159,7 @@ body {
 }
 /*margin left*/
 .m-l-0{
-  margin-left:0px;
+  margin-left:0px !important;
 }
 .m-l-5{
   margin-left:5px;
@@ -339,11 +339,32 @@ body {
 .bg-transparent{
     background-color: transparent;
 }
+
+.profile-body{
+  background: gray;
+}
+
 .change-profile-img{
   position: absolute;
-  bottom: 0px;
-  right: 10px;
+  bottom: 5px;
+  left: 20px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.79);
 }
-.signup-body{
-  background: url('../images/bg.svg') no-repeat center;
+.border-radius-10{
+  border-radius: 5px;
+}
+
+/*Colors*/
+.bg-light-gray{
+  background: #c9c9c9;
+}
+.bg-light-green{
+  background-color: #89bdd3;
+}
+.text-white-gray{
+color: #e3e3e3 !important;
+}
+.bg-dark-green{
+background: #173e43;
 }
