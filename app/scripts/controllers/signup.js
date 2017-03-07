@@ -15,7 +15,15 @@ angular.module('projectsApp')
     view.init = function(){
       view.seller = {};
       view.buyer = {};
-      console.log('signup');
+      view.form = '';
+    };
+
+    view.setForm = function(form) {
+      view.form = form;
+    };
+
+    view.isSet = function(form){
+      return form === view.form;
     };
 
     view.searchingText = [

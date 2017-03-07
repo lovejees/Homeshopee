@@ -143,7 +143,7 @@ body {
 
 /*margin right*/
 .m-r-0{
-  margin-right:0px;
+  margin-right:0px !important;
 }
 .m-r-5{
   margin-right:5px;
@@ -260,7 +260,7 @@ body {
 .border-0{
   border:0px;
 }
-.border{
+.border-1{
   border:1px solid black;
 }
 .border-top-black{
@@ -304,6 +304,9 @@ body {
 .boder-radius-50{
   border-radius: 50%;
 }
+.width-50{
+  width: 50%;
+}
 .width-80{
   width: 80%;
 }
@@ -330,15 +333,6 @@ body {
 .absolute{
   position: absolute;
 }
-.text-white{
-    color: white !important;
-}
-.bg-white{
-    background-color: white !important;
-}
-.bg-transparent{
-    background-color: transparent;
-}
 
 .profile-body{
   background: gray;
@@ -354,17 +348,8 @@ body {
 .border-radius-10{
   border-radius: 5px;
 }
-
-/*Colors*/
-.bg-light-gray{
-  background: #c9c9c9;
-}
-.bg-light-green{
-  background-color: #89bdd3;
-}
-.text-white-gray{
-color: #e3e3e3 !important;
-}
-.bg-dark-green{
-background: #173e43;
+.custom-header1 > li > a:active{
+  background: white !important;
+  color: #3fb0ac !important;
+  font-weight: bolder !important;
 }

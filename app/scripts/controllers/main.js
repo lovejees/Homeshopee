@@ -28,6 +28,10 @@ angular.module('projectsApp')
       $scope.common = commonservice;
     };
 
+    $scope.headerClass = function(path) {
+      return path === $location.path();
+    };
+
     $scope.setPath = function(path){
       $location.path(path);
       //  = '#/' + path;

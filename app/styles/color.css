@@ -1,0 +1,106 @@
+.text-white{
+    color: white !important;
+}
+.bg-white{
+    background-color: white !important;
+}
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-big-stone{
+background: #173e43;
+}
+
+.big-stone{
+color: #173e43;
+}
+
+.saffron{
+  color: #f2b632;
+}
+.bg-saffron{
+  background: #f2b632;
+}
+.bombay{
+  color: #b5b5b7;
+}
+.bg-bombay{
+background: #b5b5b7;
+}
+
+.nevada{
+  color: #677077;
+}
+.bg-nevada{
+background: #677077;
+}
+
+.ebony-clay{
+  color: #252839;
+}
+.bg-ebony-clay{
+  background: #252839;
+}
+.anzac{
+  color:#E6AF4B;
+}
+.bg-anzac{
+  background:#E6AF4B;
+}
+.cinnabar{
+  color:#e05038;
+}
+.bg-cinnabar{
+  background:#e05038;
+}
+.mandys-pink{
+  color:#f2cbbc
+}
+.bg-mandys-pink{
+  background:#f2cbbc
+}
+.lunar-green{
+  color:#334431;
+}
+.bg-lunar-green{
+  background:#334431;
+}
+.keppel{
+  color: #3fb0ac;
+}
+.bg-keppel{
+  background-color: #3fb0ac;
+}
+/*Header Color*/
+.header-btn .twilight-blue{
+  color: #FEFFFF !important;
+}
+.header-btn .bg-keppel{
+  background-color: #3fb0ac !important;
+}
+/*Header Color*/
+.catskill-white{
+ color: #E8EDF3;
+}
+
+.twilight-blue{
+  color: #FEFFFF;
+}
+.bg-twilight-blue{
+  background: #FEFFFF;
+}
+
+.aths-special{
+  color: #ede9ce;
+}
+
+.bg-aths-special{
+  background-color:#ede9ce;
+}
+.port-gore{
+  color: #22264B;
+}
+.bg-port-gore{
+  background: #22264B;
+}
