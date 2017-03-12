@@ -50,9 +50,14 @@ angular.module('projectsApp')
       },
     ];
 
-    view.signup = function(){
+    view.sellerSignup = function(){
       console.log(view.seller,view.buyer);
       $scope.setPath('/home/seller/pavittar');
+    };
+
+    view.buyerSignup = function(){
+      console.log(view.seller,view.buyer);
+      $scope.setPath('/home/buyer/pavittar');
     };
 
     view.init();

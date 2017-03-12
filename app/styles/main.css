@@ -348,8 +348,21 @@ body {
 .border-radius-10{
   border-radius: 5px;
 }
-.custom-header1 > li > a:active{
+/*.custom-header1 > li > a:active{
   background: white !important;
   color: #3fb0ac !important;
   font-weight: bolder !important;
+}*/
+
+.test a:hover{
+  color: red;
+}
+.test a:active{
+  color: yellow;
+}
+.test a:focus{
+  color: green !important;
+}
+.test a:visited{
+  color: green !important;
 }

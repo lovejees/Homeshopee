@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('projectsApp', [
+angular.module('projectsApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -22,32 +21,69 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        // title: 'pavittar',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'main',
+        resolve:{
+          title:['$rootScope', function($rootScope) {
+            $rootScope.title = 'Job Done';
+          }]
+        }
       })
       .when('/about', {
+        title: 'about',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controllerAs: 'about',
+        resolve:{
+          title:['$rootScope', function($rootScope) {
+            $rootScope.title = 'About';
+          }]
+        }
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
         controller: 'SignupCtrl',
-        controllerAs: 'signup'
+        controllerAs: 'signup',
+        resolve:{
+          title:['$rootScope', function($rootScope) {
+            $rootScope.title = 'Sign Up';
+          }]
+        }
       })
       .when('/home/seller/:name', {
         templateUrl: 'views/home/seller.html',
         controller: 'HomeSellerCtrl',
-        controllerAs: 'seller'
+        controllerAs: 'seller',
+        resolve:{
+          title:['$rootScope', function($rootScope) {
+            $rootScope.title = 'name | buyer';
+          }]
+        }
       })
       .when('/home/buyer/:name', {
         templateUrl: 'views/home/buyer.html',
         controller: 'HomeBuyerCtrl',
-        controllerAs: 'buyer'
+        controllerAs: 'buyer',
+        resolve:{
+          title:['$rootScope', function($rootScope) {
+            $rootScope.title = 'name | seller';
+          }]
+        }
       })
       .when('/404', {
         templateUrl: '404.html',
+      })
+      .when('/guessnumber', {
+        templateUrl: 'views/custom/guessthenumber.html',
+        controller: 'GuessnumberCtrl',
+        controllerAs: 'guessnumber',
+        resolve:{
+          title:['$rootScope', function($rootScope) {
+            $rootScope.title = 'Guess the number';
+          }]
+        }
       })
       .otherwise({
         redirectTo: '/404'

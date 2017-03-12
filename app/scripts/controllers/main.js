@@ -9,8 +9,8 @@
  */
  //main
 angular.module('projectsApp')
-  .controller('MainCtrl',['$scope','$location', 'CONST', 'ASSET', 'commonservice',
-  function ($scope, $location, CONST, ASSET, commonservice) {
+.controller('MainCtrl',['$scope','$location', 'CONST', 'ASSET', 'commonservice', '$rootScope','titleService','ROUTECONST',
+  function ($scope, $location, CONST, ASSET, commonservice, $rootScope,titleService,ROUTECONST) {
 
 
     $scope.init = function(){
@@ -36,6 +36,12 @@ angular.module('projectsApp')
       $location.path(path);
       //  = '#/' + path;
     };
+
+    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        // $rootScope.title = $location.path();
+        // ROUTECONST
+
+    });
 
     $scope.init();
 
