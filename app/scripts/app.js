@@ -77,7 +77,7 @@ angular.module('projectsApp', [
       })
       .when('/guessnumber', {
         templateUrl: 'views/custom/guessthenumber.html',
-        controller: 'GuessnumberCtrl',
+        controller: 'GameGuessthenumberCtrl',
         controllerAs: 'guessnumber',
         resolve:{
           title:['$rootScope', function($rootScope) {

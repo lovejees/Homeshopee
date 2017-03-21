@@ -40,7 +40,6 @@ angular.module('projectsApp')
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
         // $rootScope.title = $location.path();
         // ROUTECONST
-
     });
 
     $scope.init();

@@ -12,11 +12,11 @@ angular.module('projectsApp')
 
     var factory = this;
 
-    factory.showToast = function(content){
+    factory.showToast = function(content,position){
       $mdToast.show(
         $mdToast.simple()
           .textContent(content)
-          .position('top right')
+          .position(position)
           .hideDelay(2000)
       );
       // $mdToast.show({
