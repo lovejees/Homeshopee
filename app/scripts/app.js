@@ -16,6 +16,7 @@ angular.module('projectsApp', [
     'ngSanitize',
     'ngTouch',
     'ngMaterial',
+    'ngFileSaver',
     'toastr'
   ])
   .config(function ($routeProvider) {

@@ -13,5 +13,24 @@ angular.module('projectsApp')
     RoleIds:{
       'seller':1,
       'buyer':2
-    }
+    },
+    apps:[
+      {
+        'name':'web to Pdf',
+        'link':'',
+        'imgUrl':''
+      },{
+        'name':'News',
+        'link':'',
+        'imgUrl':''
+      },{
+        'name':'web to Pdf',
+        'link':'',
+        'imgUrl':''
+      },{
+        'name':'web to Pdf',
+        'link':'',
+        'imgUrl':''
+      }
+    ]
   });

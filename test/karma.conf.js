@@ -33,6 +33,9 @@ module.exports = function(config) {
       'bower_components/angular-messages/angular-messages.js',
       'bower_components/angular-material/angular-material.js',
       'bower_components/angular-toastr/dist/angular-toastr.tpls.js',
+      'bower_components/blob-polyfill/Blob.js',
+      'bower_components/file-saver.js/FileSaver.js',
+      'bower_components/angular-file-saver/dist/angular-file-saver.bundle.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
