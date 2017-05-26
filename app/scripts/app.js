@@ -17,6 +17,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngMaterial',
+    'ngFileSaver',
     'toastr'
   ])
   .config(function ($routeProvider) {
