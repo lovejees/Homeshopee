@@ -19,7 +19,12 @@ angular.module('projectsApp', [
     'ngFileSaver',
     'toastr'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider, $provide) {
+    // $provide.decorator('$sniffer', function($delegate) {
+    //   $delegate.history = false;
+    //   return $delegate;
+    // });
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
         // title: 'pavittar',
@@ -53,23 +58,23 @@ angular.module('projectsApp', [
           }]
         }
       })
-      .when('/home/seller/:name', {
+      .when('/webToPdf', {
         templateUrl: 'views/home/seller.html',
         controller: 'HomeSellerCtrl',
         controllerAs: 'seller',
         resolve:{
           title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'name | buyer';
+            $rootScope.title = 'Web To Pdf | Forzon App';
           }]
         }
       })
-      .when('/home/buyer/:name', {
+      .when('/findMyIp', {
         templateUrl: 'views/home/buyer.html',
         controller: 'HomeBuyerCtrl',
         controllerAs: 'buyer',
         resolve:{
           title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'name | seller';
+            $rootScope.title = 'Find My Ip | Forzon App';
           }]
         }
       })
@@ -89,4 +94,8 @@ angular.module('projectsApp', [
       .otherwise({
         redirectTo: '/404'
       });
-  });
+  }).config(['$httpProvider',
+  function($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+  }
+]);

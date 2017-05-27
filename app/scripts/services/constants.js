@@ -17,11 +17,11 @@ angular.module('projectsApp')
     apps:[
       {
         'name':'web to Pdf',
-        'link':'',
+        'link':'webToPdf',
         'imgUrl':''
       },{
         'name':'News',
-        'link':'',
+        'link':'findMyIp',
         'imgUrl':''
       },{
         'name':'web to Pdf',
