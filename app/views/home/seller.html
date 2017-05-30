@@ -1,24 +1,26 @@
-<md-button scrolltop class="md-primary md-fab md-fab-bottom-right" ng-click="seller.showToast()">FAB</md-button>
+<!-- <md-button scrolltop class="md-primary md-fab md-fab-bottom-right" ng-click="seller.showToast()">FAB</md-button> -->
 <div class="row margin-0">
   <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-    <div class="row margin-auto border border-radius-10 profile-body">
-      <div class="col-md-4 col-sm-12 col-lg-2 col-xs-12 padding-0">
-        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 relative">
-          <img ng-src="http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg" class="width-80 full-height boder-radius relative" alt="profile-image">
-          <img class="change-profile-img" ng-src="http://simpleicon.com/wp-content/uploads/camera-5.png" width="30" height="30" alt="change-profile-image">
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-          <h1>Pavittar Singh</h1>
-        </div>
+    <div class="row margin-auto border border-radius-10">
+      <!-- <div class="col-md-4 col-sm-12 col-lg-2 col-xs-12 padding-0">
       </div>
-      <div class="col-md-8 col-sm-12 col-lg-10 col-xs-12">
+      <div class="col-md-8 col-sm-12 col-lg-10 col-xs-12"> -->
         <!-- <div class="">
 
         </div> -->
-        <input type="text" name="" value="" ng-model="seller.website">
+        <!-- <input type="text" name="" value="" ng-model="seller.website">
         <button type="button" name="button" ng-click="seller.ShowSearches()">get Show</button>
         <button type="button" name="button" ng-click="seller.webToPdf()">DownLoad Pdf</button>
         <button type="button" name="button" ng-click="seller.Download()">DownLoad Pdf 2</button>
+      </div> -->
+      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-centered padding-30 bg-gray classWithShadow" ng-form="webToPdf">
+          <md-input-container class="md-block m-t-0 m-b-0">
+            <label class="text-uppercase">Enter Web Url Here</label>
+            <input type="url" ng-model="seller.website" name="website" ng-required>
+          </md-input-container>
+          <md-button class="md-raised md-primary col-centered" ng-click="seller.webToPdf()" name="websiteBtn" ng-disabled="seller.download">Download</md-button>
+        </div>
       </div>
     </div>
   </div>

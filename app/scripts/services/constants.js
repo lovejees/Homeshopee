@@ -18,19 +18,23 @@ angular.module('projectsApp')
       {
         'name':'web to Pdf',
         'link':'webToPdf',
-        'imgUrl':''
+        'imgUrl':'',
+        'class': false
       },{
         'name':'News',
         'link':'findMyIp',
-        'imgUrl':''
+        'imgUrl':'',
+        'class': false
       },{
         'name':'web to Pdf',
         'link':'',
-        'imgUrl':''
+        'imgUrl':'',
+        'class': false
       },{
         'name':'web to Pdf',
         'link':'',
-        'imgUrl':''
+        'imgUrl':'',
+        'class': false
       }
     ]
   });

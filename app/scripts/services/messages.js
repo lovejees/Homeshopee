@@ -16,5 +16,7 @@ angular.module('projectsApp')
       'password_length':'Password length is less than 8 characters',
       'successfull_login':'login successfull'
     },
-    genericError:'Something went wrong. Please try again later'
+    invalid_url:'Enter valid url',
+    genericError:'Something went wrong. Please try again later',
+    successfullDown:'File Successfully Downloaded'
   });

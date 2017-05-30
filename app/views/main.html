@@ -22,19 +22,16 @@
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
 </div> -->
-<div class="row margin-0 padding-30 bg-port-gore">
-  <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 p-r-0 p-l-0">
-    <h1 class="text-center text-white">FORZON</h1>
-    <p class="text-center text-white">Build Your Own Online Business</p>
-  </div>
-</div>
 <div class="row margin-0">
   <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-xs-6 col-ms-3 text-center padding-10" ng-repeat="apps in constants.apps">
-        <a ng-href ng-click="setPath(apps.link);">
-          <span ng-bind="apps.name"></span>
-        </a>
+    <div class="row margin-0 padding-20">
+      <div class="col-md-4 col-lg-3 col-xs-12 col-sm-4 text-center padding-10" ng-repeat="apps in constants.apps">
+        <div class="text-center padding-0 relative" ng-class="{'classWithShadow':apps.class}" ng-mouseover="apps.class=true" ng-mouseout="apps.class=false">
+          <img class="image-tile" src="../images/test.png" alt="tile">
+          <a class="full-width absolute bottom-0 left-0 right-0 image-tile-text-color padding-20" ng-href ng-click="setPath(apps.link);">
+            <span class="text-uppercase" ng-bind="apps.name"></span>
+          </a>
+        </div>
       </div>
     </div>
   </div>

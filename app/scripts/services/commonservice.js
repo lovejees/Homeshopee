@@ -8,24 +8,9 @@
  * Service in the projectsApp.
  */
 angular.module('projectsApp')
-  .service('commonservice', ['$mdToast', '$http', function ($mdToast,$http) {
+  .service('commonservice', ['$http', function ($http) {
 
     var factory = this;
-
-    factory.showToast = function(content,position){
-      $mdToast.show(
-        $mdToast.simple()
-          .textContent(content)
-          .position(position)
-          .hideDelay(2000)
-      );
-      // $mdToast.show({
-      //   hideDelay   : 3000,
-      //   position    : 'top right',
-      //   // controller  : 'ToastCtrl',
-      //   templateUrl : 'views/custom/customtoast.html'
-      // });
-    };
 
     factory.ShowSearches = function () {
       return $http.get('http://api.tvmaze.com/search/shows?q="the game of throne"');

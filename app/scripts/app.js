@@ -33,7 +33,7 @@ angular.module('projectsApp', [
         controllerAs: 'main',
         resolve:{
           title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'Job Done';
+            $rootScope.title = 'FORZON APPS';
           }]
         }
       })
@@ -44,27 +44,27 @@ angular.module('projectsApp', [
         controllerAs: 'about',
         resolve:{
           title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'About';
+            $rootScope.title = 'ABOUT | FORZON';
           }]
         }
       })
-      .when('/signup', {
-        templateUrl: 'views/signup.html',
-        controller: 'SignupCtrl',
-        controllerAs: 'signup',
-        resolve:{
-          title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'Sign Up';
-          }]
-        }
-      })
+      // .when('/signup', {
+      //   templateUrl: 'views/signup.html',
+      //   controller: 'SignupCtrl',
+      //   controllerAs: 'signup',
+      //   resolve:{
+      //     title:['$rootScope', function($rootScope) {
+      //       $rootScope.title = 'Sign Up';
+      //     }]
+      //   }
+      // })
       .when('/webToPdf', {
         templateUrl: 'views/home/seller.html',
         controller: 'HomeSellerCtrl',
         controllerAs: 'seller',
         resolve:{
           title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'Web To Pdf | Forzon App';
+            $rootScope.title = 'WEB TO PDF | FORZON APPS';
           }]
         }
       })
@@ -74,7 +74,7 @@ angular.module('projectsApp', [
         controllerAs: 'buyer',
         resolve:{
           title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'Find My Ip | Forzon App';
+            $rootScope.title = 'FIND MY IP | FORZON APPS';
           }]
         }
       })
@@ -94,8 +94,7 @@ angular.module('projectsApp', [
       .otherwise({
         redirectTo: '/404'
       });
-  }).config(['$httpProvider',
-  function($httpProvider) {
+  }).config(['$httpProvider',function($httpProvider) {
     $httpProvider.defaults.useXDomain = true;
   }
 ]);

@@ -1,4 +1,4 @@
-.text-white{
+  .text-white{
     color: white !important;
 }
 .bg-white{
@@ -109,4 +109,46 @@ background: #677077;
 }
 .red{
   color: red;
+}
+
+/*        New Color COde           */
+
+.header-Image{
+  /*background: #312c32;*/
+  background-image: url("../images/DreamCity.jpg");
+  width: 100%;
+  height: 400px;
+}
+.header-color{
+  background: #312c32;
+}
+.footer-color{
+  background: #312c32;
+}
+.tagline{
+  color: #d6b01f;
+}
+.image-tile-text-color{
+  background: #ededf3;
+}
+.right-logo-color{
+  color: #98dafc;
+}
+.left-logo-color{
+  color: #b56969;
+}
+.right-logo-border{
+  border-left: 4px solid #98dafc;
+}
+.left-logo-border{
+  border-right: 4px solid #b56969;
+}
+.right-logo-border-black{
+  border-left: 4px solid black;
+}
+.left-logo-border-black{
+  border-right: 4px solid black;
+}
+.bg-gray{
+  background: #e7e7e7;
 }

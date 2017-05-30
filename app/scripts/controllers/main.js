@@ -9,8 +9,8 @@
  */
  //main
 angular.module('projectsApp')
-.controller('MainCtrl',['$scope','$location', 'CONST', 'ASSET', 'commonservice', '$rootScope','titleService','ROUTECONST',
-  function ($scope, $location, CONST, ASSET, commonservice, $rootScope,titleService,ROUTECONST) {
+.controller('MainCtrl',['$scope','$location', 'CONST', 'ASSET', 'commonservice', '$rootScope','titleService','ROUTECONST', '$mdToast',
+  function ($scope, $location, CONST, ASSET, commonservice, $rootScope,titleService,ROUTECONST,$mdToast) {
 
 
     $scope.init = function(){
@@ -20,6 +20,20 @@ angular.module('projectsApp')
       $scope.commonVariable();
     };
 
+    $scope.showToast = function(content){
+      $mdToast.show(
+        $mdToast.simple()
+          .textContent(content)
+          .position('top')
+          .hideDelay(2000)
+      );
+      // $mdToast.show({
+      //   hideDelay   : 3000,
+      //   position    : 'top right',
+      //   // controller  : 'ToastCtrl',
+      //   templateUrl : 'views/custom/customtoast.html'
+      // });
+    };
 
     $scope.commonVariable = function(){
       $scope.constants = CONST;
