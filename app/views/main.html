@@ -1,0 +1,21 @@
+<div class="row margin-0 ">
+  <!-- Categories -->
+  <div class="col-md-4 col-lg-4 col-sm-4 border-right-1">
+    <ul class="list-group border-0">
+      <li class="list-group-item"><a href ng-click="main.openItem('filter')">Cras justo odio</a></li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+  <div class="col-md-8 col-lg-8 col-sm-8">
+    <div class="col-md-6 col-lg-6 col-sm-6 p-t-10 p-b-20" ng-repeat="x in main.array">
+      <img ng-src="{{x.imageurl}}" width="200" height="200" alt="image">
+      <p class="text-center" ng-bind="x.name"></p>
+      <div class="col-md-12 col-sm-12 col-sm-12 col-lg-12 text-center">
+        <button  class="btn btn-primary" type="button" name="button" ng-click="main.openItem(x.id)">view</button>
+      </div>
+    </div>
+  </div>
+</div>

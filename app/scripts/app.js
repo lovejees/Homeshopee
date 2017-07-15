@@ -26,6 +26,11 @@ angular.module('projectsApp', [
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/item/:id', {
+        templateUrl: 'views/item.html',
+        controller: 'ItemCtrl',
+        controllerAs: 'item'
+      })
       .otherwise({
         redirectTo: '/404'
       });

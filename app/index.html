@@ -15,7 +15,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-
+    <link rel="stylesheet" href="styles/header.css">
     <!-- endbuild -->
     <!-- Fonts -->
     <!-- Fonts -->
@@ -25,6 +25,7 @@
       <!-- header directive will load header.html on a page -->
 
       <!-- ng-view directive will show all the views of the apps -->
+      <div header></div>
       <div class="m-t-85" ng-view=""></div>
     </div>
 
@@ -64,6 +65,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/directives/appdirectives.js"></script>
+        <script src="scripts/controllers/item.js"></script>
+        <script src="scripts/services/commonservice.js"></script>
+        <script src="scripts/services/constant.js"></script>
         <!-- endbuild -->
 </body>
 </html>
