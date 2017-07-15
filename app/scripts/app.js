@@ -16,80 +16,15 @@ angular.module('projectsApp', [
     'ngSanitize',
     'ngTouch',
     'ngMaterial',
-    'ngFileSaver',
-    'toastr'
+    'toastr',
+    'ngStorage'
   ])
   .config(function ($routeProvider, $locationProvider, $provide) {
-    // $provide.decorator('$sniffer', function($delegate) {
-    //   $delegate.history = false;
-    //   return $delegate;
-    // });
-    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
-        // title: 'pavittar',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main',
-        resolve:{
-          title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'FORZON APPS';
-          }]
-        }
-      })
-      .when('/about', {
-        title: 'about',
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about',
-        resolve:{
-          title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'ABOUT | FORZON';
-          }]
-        }
-      })
-      // .when('/signup', {
-      //   templateUrl: 'views/signup.html',
-      //   controller: 'SignupCtrl',
-      //   controllerAs: 'signup',
-      //   resolve:{
-      //     title:['$rootScope', function($rootScope) {
-      //       $rootScope.title = 'Sign Up';
-      //     }]
-      //   }
-      // })
-      .when('/webToPdf', {
-        templateUrl: 'views/home/seller.html',
-        controller: 'HomeSellerCtrl',
-        controllerAs: 'seller',
-        resolve:{
-          title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'WEB TO PDF | FORZON APPS';
-          }]
-        }
-      })
-      .when('/findMyIp', {
-        templateUrl: 'views/home/buyer.html',
-        controller: 'HomeBuyerCtrl',
-        controllerAs: 'buyer',
-        resolve:{
-          title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'FIND MY IP | FORZON APPS';
-          }]
-        }
-      })
-      .when('/404', {
-        templateUrl: '404.html',
-      })
-      .when('/guessnumber', {
-        templateUrl: 'views/custom/guessthenumber.html',
-        controller: 'GameGuessthenumberCtrl',
-        controllerAs: 'guessnumber',
-        resolve:{
-          title:['$rootScope', function($rootScope) {
-            $rootScope.title = 'Guess the number';
-          }]
-        }
+        controllerAs: 'main'
       })
       .otherwise({
         redirectTo: '/404'
